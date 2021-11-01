@@ -3,4 +3,3 @@ ROUND(MIN_SALARY / 12, 2) AS 'Média mínima mensal', ROUND(MAX_SALARY / 12, 2) 
 FROM hr.jobs
 GROUP BY Cargo
 ORDER BY 'Variação Salarial', Cargo;
- 
