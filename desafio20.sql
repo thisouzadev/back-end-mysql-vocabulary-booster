@@ -10,7 +10,7 @@ INNER JOIN departments AS d
 ON jh.DEPARTMENT_ID = d.DEPARTMENT_ID
 INNER JOIN jobs AS j
 ON jh.JOB_ID = j.JOB_ID
-WHERE e.EMAIL = user_email;
+WHERE e.EMAIL = user_email
+ORDER BY CARGO ASC, DEPARTAMENTO;
 END $$
-ORDER BY Departamento, Cargo
 DELIMITER ;
